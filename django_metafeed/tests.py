@@ -104,8 +104,12 @@ class FeedTests(TestCase):
         feed = FullFeed('all', r).get_feed('')
         self.assertEqual(Atom1Feed, type(feed))
 
-        self.assertEqual(4, len(feed.items))
+        f = feed.feed
+        self.assertEqual('Full feed', f['title'])
+        self.assertEqual('http://example.com/all/', f['link'])
+
         i = feed.items
+        self.assertEqual(4, len(i))
         self.assertEqual('Gallery: Second image\n', i[0]['title'])
         self.assertEqual('Blog: Second post\n',     i[1]['title'])
         self.assertEqual('Gallery: First image\n',  i[2]['title'])
