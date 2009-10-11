@@ -2,20 +2,15 @@ import os
 import sys
 from setuptools import setup, find_packages
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
-from django_app_template import __version__ as version
-
 setup(
-    name = 'django-app-template',
-    version = version,
-    description = '''Template for my django applications.''',
+    name = 'django-metafeed',
+    version = '0.1.0',
+    description = '''Django feed aggregator, to merge few feeds into the one.''',
     keywords = 'django apps',
     license = 'New BSD License',
     author = 'Alexander Artemenko',
     author_email = 'svetlyak.40wt@gmail.com',
-    url = 'http://github.com/svetlyak40wt/django-app-template/',
-    install_requires = [],
-    dependency_links = [],
+    url = 'http://github.com/svetlyak40wt/django-metafeed/',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Environment :: Plugins',
@@ -25,8 +20,8 @@ setup(
         'Programming Language :: Python',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
-    package_dir = {'': 'src'},
-    packages = find_packages('src'),
+    #package_dir = {'': 'src'},
+    packages = find_packages(),
     include_package_data = True,
     zip_safe = False,
 )

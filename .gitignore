@@ -1,9 +1,9 @@
 *.pyc
 .*.swp
+*.egg-info
 .installed.cfg
 bin
 develop-eggs
 dist
-django_app_template.egg-info
 parts
 build
