@@ -1,1 +1,1 @@
-recursive-include src/templates *.html
+recursive-include django_metafeed/templates *.html

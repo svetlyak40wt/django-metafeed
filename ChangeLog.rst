@@ -4,4 +4,5 @@ ChangeLog
 0.1.0
 -----
 
-* Initial commit.
+* django-metafeed can merge multiple feeds into the one.
+
